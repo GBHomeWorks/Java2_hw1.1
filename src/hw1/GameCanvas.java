@@ -26,6 +26,10 @@ public class GameCanvas extends JPanel {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+//        setBackground(Color.cyan); // TO SETTING
+        Background background = new Background();
+        setBackground(background.getColor());
+        background.setColor(background.i);
         repaint();
     }
 
